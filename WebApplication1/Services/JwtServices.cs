@@ -20,7 +20,7 @@ namespace WebApplication1.Services
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, user.email),
-                new Claim(ClaimTypes.Role, user.Role)
+                //new Claim(ClaimTypes.Role, user.Role)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));

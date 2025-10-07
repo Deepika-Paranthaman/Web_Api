@@ -26,7 +26,6 @@ namespace WebApplication1.Models
         [Required]
         public string address { get; set; }
 
-        public string Role { get; set; } = "Customer"; // Needed for JWT
     }
 }
 
